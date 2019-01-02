@@ -1,0 +1,5 @@
+<% if @rate.nil? %>
+    <p>Your selected rate is not available.</p>
+<% else %>
+    <h1>Your exchange rate is <%= sprintf('%.2f',@rate) %></h1>
+<% end %>
